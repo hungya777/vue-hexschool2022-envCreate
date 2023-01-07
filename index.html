@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第三週團隊任務-任務一</title>
+  <!-- 載入vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+  <script>
+    const obj = {
+      data(){
+        return{  //一律使用 function return
+          message: 'hungya測試頁面'
+        }
+      },
+      methods: { //函式的集合
+
+      },
+      created(){ //元件生成，必定會執行的項目
+
+      }
+    }
+
+    Vue.createApp(obj)
+      .mount('#app')
+  </script>
+</body>
+</html>
